@@ -29,7 +29,7 @@ void PrintArray(double[] array)
 
 
 
-double DifferenceMinMax(double[] array)    // это отнело 2 часа моей жизни, подскажите есть ли более очевидный способ сразу найти мак и мин в массиве? 
+double DifferenceMinMax(double[] array)    
 {
     int minPosition = 0;
     int maxPosition = 0;
@@ -53,5 +53,5 @@ double DifferenceMinMax(double[] array)    // это отнело 2 часа м�
 
 double[] arr = CreatrArrayRndDouble(5, 1, 99);
 PrintArray(arr);
-double res = DifferenceMinMax(arr);
+double res = Math.Round(DifferenceMinMax(arr), 1);
 Console.Write( $" -> {res}");
